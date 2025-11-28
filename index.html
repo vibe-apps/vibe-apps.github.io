@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="pages/styles/style.css" />
     <link rel="stylesheet" href="pages/styles/font-comparison.css" />
+    <link rel="stylesheet" href="pages/styles/font-comparison-code.css" />
   </head>
   <body>
     <div class="container">
@@ -52,18 +53,36 @@
                   clients, including Scotland Yard.
                 </p>
               </div>
+            </div>
+
+            <div class="fade-overlay"></div>
+            <span class="more-button">More</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="tool-section">
+        <h2 class="tool-title">Font Comparison for Code</h2>
+
+        <div class="preview-wrapper">
+          <a href="pages/font-comparison-code.html" class="preview-link">
+            <div class="preview-content">
+              <div class="font-section">
+                <div class="font-name fira-code">
+                  Fira Code - Mozilla, supports ligatures
+                </div>
+                <pre class="code-sample fira-code"><span class="keyword">const</span> items = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">0</span>];
+<span class="keyword">const</span> filtered = items.<span class="keyword">filter</span>(x <span class="operator">=&gt;</span> x <span class="operator">!==</span> <span class="number">0</span>);
+<span class="keyword">console</span>.<span class="keyword">log</span>(`Total: ${filtered.length} items`);</pre>
+              </div>
 
               <div class="font-section">
-                <div class="font-name lato">Lato - Airbnb, Slack, Typeform</div>
-                <p class="sample-text lato">
-                  Sherlock Holmes is a fictional detective created by British
-                  author Sir Arthur Conan Doyle. Referring to himself as a
-                  "consulting detective" in the stories, Holmes is known for his
-                  proficiency with observation, deduction, forensic science, and
-                  logical reasoning that borders on the fantastic, which he
-                  employs when investigating cases for a wide variety of
-                  clients, including Scotland Yard.
-                </p>
+                <div class="font-name jetbrains-mono">
+                  JetBrains Mono - JetBrains IDEs, ligatures
+                </div>
+                <pre class="code-sample jetbrains-mono"><span class="keyword">const</span> items = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">0</span>];
+<span class="keyword">const</span> filtered = items.<span class="keyword">filter</span>(x <span class="operator">=&gt;</span> x <span class="operator">!==</span> <span class="number">0</span>);
+<span class="keyword">console</span>.<span class="keyword">log</span>(`Total: ${filtered.length} items`);</pre>
               </div>
             </div>
 
