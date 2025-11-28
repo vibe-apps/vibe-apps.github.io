@@ -165,6 +165,10 @@
     font-family: Georgia, Cambria, "Times New Roman", serif;
 }
 
+.times-new-roman {
+    font-family: "Times New Roman", Times, serif;
+}
+
 .lora {
     font-family: Lora, Georgia, serif;
 }
@@ -318,6 +322,10 @@
 }
 
 /* Sized up fonts for better readability */
+.times-new-roman {
+    font-size: calc(var(--base-size) + 1px);
+}
+
 .alegreya {
     font-size: calc(var(--base-size) + 2px);
 }
@@ -351,6 +359,10 @@
 }
 
 /* Header adjustments for better readability - same as body text */
+.font-name.times-new-roman {
+    font-size: calc(20px + 1px);
+}
+
 .font-name.alegreya {
     font-size: calc(20px + 2px);
 }

@@ -176,6 +176,11 @@
 }
 
 /* Monospaced Font Families */
+.cascadia-code {
+    font-family: 'Cascadia Code', 'Courier New', monospace;
+    font-variant-ligatures: common-ligatures;
+}
+
 .fira-code {
     font-family: 'Fira Code', 'Courier New', monospace;
     font-variant-ligatures: common-ligatures;

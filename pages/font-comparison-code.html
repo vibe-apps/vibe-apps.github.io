@@ -6,7 +6,7 @@
     <title>Font Comparison - Code</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=JetBrains+Mono:wght@300;400;500&family=Source+Code+Pro:wght@300;400;500&family=Roboto+Mono:wght@300;400;500&family=IBM+Plex+Mono:wght@300;400;500&family=Inconsolata:wght@300;400;500&family=Ubuntu+Mono:wght@400;700&family=Noto+Sans+Mono:wght@300;400;500&family=Space+Mono:wght@400;700&family=Courier+Prime:wght@400;700&family=Anonymous+Pro:wght@400;700&family=Overpass+Mono:wght@300;400;500&family=Red+Hat+Mono:wght@300;400;500&family=DM+Mono:wght@300;400;500&family=Azeret+Mono:wght@300;400;500&family=Inter:wght@300;400;500&family=Roboto:wght@300;400;500&family=Open+Sans:wght@300;400;500&family=Lato:wght@300;400&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@300;400;500&family=Fira+Code:wght@300;400;500&family=JetBrains+Mono:wght@300;400;500&family=Source+Code+Pro:wght@300;400;500&family=Roboto+Mono:wght@300;400;500&family=IBM+Plex+Mono:wght@300;400;500&family=Inconsolata:wght@300;400;500&family=Ubuntu+Mono:wght@400;700&family=Inter:wght@300;400;500&family=Roboto:wght@300;400;500&family=Open+Sans:wght@300;400;500&family=Lato:wght@300;400&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/font-comparison-code.css">
 </head>
@@ -17,7 +17,7 @@
         <div class="controls">
             <div class="tabs">
                 <div class="tab mono-tab active" onclick="switchTab('monospace')">Monospaced Fonts</div>
-                <div class="tab sans-tab" onclick="switchTab('sans-serif')">Sans-Serif Fonts</div>
+                <div class="tab sans-tab" onclick="switchTab('sans-serif')">Regular Fonts</div>
             </div>
 
             <div class="size-control">
@@ -31,13 +31,13 @@
 
         <div id="monospace" class="tab-content active">
         <div class="font-section">
-            <div class="font-name fira-code">Fira Code - Mozilla, supports ligatures</div>
-            <pre class="code-sample fira-code"></pre>
+            <div class="font-name consolas">Consolas - Windows/Visual Studio default</div>
+            <pre class="code-sample consolas"></pre>
         </div>
 
         <div class="font-section">
-            <div class="font-name jetbrains-mono">JetBrains Mono - JetBrains IDEs, ligatures</div>
-            <pre class="code-sample jetbrains-mono"></pre>
+            <div class="font-name courier-new">Courier New - Classic universal</div>
+            <pre class="code-sample courier-new"></pre>
         </div>
 
         <div class="font-section">
@@ -51,8 +51,18 @@
         </div>
 
         <div class="font-section">
-            <div class="font-name ibm-plex-mono">IBM Plex Mono - IBM projects</div>
-            <pre class="code-sample ibm-plex-mono"></pre>
+            <div class="font-name fira-code">Fira Code - Mozilla, supports ligatures</div>
+            <pre class="code-sample fira-code"></pre>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name jetbrains-mono">JetBrains Mono - JetBrains IDEs, ligatures</div>
+            <pre class="code-sample jetbrains-mono"></pre>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name cascadia-code">Cascadia Code - Microsoft, ligatures</div>
+            <pre class="code-sample cascadia-code"></pre>
         </div>
 
         <div class="font-section">
@@ -61,67 +71,22 @@
         </div>
 
         <div class="font-section">
-            <div class="font-name consolas">Consolas - Windows/Visual Studio default</div>
-            <pre class="code-sample consolas"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name menlo">Menlo - macOS default</div>
-            <pre class="code-sample menlo"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name courier-new">Courier New - Classic universal</div>
-            <pre class="code-sample courier-new"></pre>
-        </div>
-
-        <div class="font-section">
             <div class="font-name ubuntu-mono">Ubuntu Mono - Ubuntu terminal</div>
             <pre class="code-sample ubuntu-mono"></pre>
         </div>
 
         <div class="font-section">
-            <div class="font-name noto-mono">Noto Sans Mono - Google's mono font</div>
-            <pre class="code-sample noto-mono"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name space-mono">Space Mono - Google Fonts geometric</div>
-            <pre class="code-sample space-mono"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name courier-prime">Courier Prime - Improved Courier</div>
-            <pre class="code-sample courier-prime"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name anonymous-pro">Anonymous Pro - Designed for coding</div>
-            <pre class="code-sample anonymous-pro"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name overpass-mono">Overpass Mono - Red Hat's monospace</div>
-            <pre class="code-sample overpass-mono"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name red-hat-mono">Red Hat Mono - Red Hat branding</div>
-            <pre class="code-sample red-hat-mono"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name dm-mono">DM Mono - Modern geometric mono</div>
-            <pre class="code-sample dm-mono"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name azeret-mono">Azeret Mono - Contemporary coding font</div>
-            <pre class="code-sample azeret-mono"></pre>
+            <div class="font-name ibm-plex-mono">IBM Plex Mono - IBM projects</div>
+            <pre class="code-sample ibm-plex-mono"></pre>
         </div>
         </div>
 
         <div id="sans-serif" class="tab-content">
+        <div class="font-section">
+            <div class="font-name system-fonts">System Fonts - Apple, GitHub, Notion</div>
+            <pre class="code-sample system-fonts"></pre>
+        </div>
+
         <div class="font-section">
             <div class="font-name inter">Inter - Figma, Vercel, modern UIs</div>
             <pre class="code-sample inter"></pre>
@@ -130,31 +95,6 @@
         <div class="font-section">
             <div class="font-name roboto">Roboto - Android, Material Design</div>
             <pre class="code-sample roboto"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name system-fonts">System Fonts - Apple, GitHub, Notion</div>
-            <pre class="code-sample system-fonts"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name arial-helvetica">Helvetica / Arial - Classic standard</div>
-            <pre class="code-sample arial-helvetica"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name open-sans">Open Sans - WordPress, Mozilla</div>
-            <pre class="code-sample open-sans"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name lato">Lato - Popular web font</div>
-            <pre class="code-sample lato"></pre>
-        </div>
-
-        <div class="font-section">
-            <div class="font-name source-sans">Source Sans 3 - Adobe products</div>
-            <pre class="code-sample source-sans"></pre>
         </div>
         </div>
 

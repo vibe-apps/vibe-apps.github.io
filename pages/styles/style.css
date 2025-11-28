@@ -11,6 +11,8 @@ body {
   color: #e0e0e0;
   padding: 40px 20px;
   font-family: Inter, -apple-system, sans-serif;
+  min-height: 100vh;
+  overflow-y: scroll;
 }
 
 .container {
