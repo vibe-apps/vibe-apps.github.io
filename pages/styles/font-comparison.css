@@ -324,3 +324,7 @@
 .cardo {
     font-size: calc(var(--base-size) + 1px);
 }
+
+.zilla-slab {
+    font-size: calc(var(--base-size) + 1px);
+}
