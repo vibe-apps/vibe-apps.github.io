@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Comparison</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&family=Merriweather:ital,wght@0,300;0,400;1,400&family=Roboto:wght@300;400;500&family=Open+Sans:wght@300;400;500&family=Playfair+Display:wght@400;500&family=Source+Sans+3:wght@300;400;500&family=PT+Serif:wght@400;700&family=Crimson+Text:wght@400;600&family=Work+Sans:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&family=Spectral:wght@300;400;500&family=Literata:wght@300;400;500&family=DM+Sans:wght@300;400;500&family=Libre+Baskerville:wght@400;700&family=Nunito:wght@300;400;500&family=Raleway:wght@300;400;500&family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500&family=Mulish:wght@300;400;500&family=Manrope:wght@300;400;500&family=Archivo:wght@300;400;500&family=Outfit:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Sora:wght@300;400;500&family=Space+Grotesk:wght@300;400;500&family=EB+Garamond:wght@400;500&family=Cormorant+Garamond:wght@300;400;500&family=Bitter:wght@300;400;500&family=Cardo:wght@400;700&family=Noto+Serif:wght@300;400;500&family=Alegreya:wght@400;500&family=Neuton:wght@300;400;700&family=Lato:wght@300;400;700&family=Oswald:wght@300;400;500&family=Ubuntu:wght@300;400;500&family=Roboto+Slab:wght@300;400;500&family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/font-comparison.css">
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="mainHeader"></h1>
+
+        <div class="controls">
+            <div class="tabs">
+                <div class="tab sans-serif-tab active" onclick="switchTab('sans-serif')">Sans-Serif Fonts</div>
+                <div class="tab serif-tab" onclick="switchTab('serif')">Serif Fonts</div>
+            </div>
+
+            <div class="size-control">
+                <span class="size-label">Size:</span>
+                <input type="range" class="size-slider" min="12" max="24" value="16" step="1" oninput="changeSize(this.value)">
+                <span class="size-value" id="sizeValue">16px</span>
+            </div>
+        </div>
+
+        <div id="sans-serif" class="tab-content active">
+        <div class="font-section">
+            <div class="font-name roboto">Roboto - Google, YouTube, Android</div>
+            <p class="sample-text roboto">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name system-fonts">System Fonts - Apple, GitHub, Notion</div>
+            <p class="sample-text system-fonts">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name inter">Inter - Stripe, Linear, Figma, Discord</div>
+            <p class="sample-text inter">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name arial-helvetica">Helvetica / Arial - Classic web standard</div>
+            <p class="sample-text arial-helvetica">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name open-sans">Open Sans - WordPress, Mozilla, Shopify</div>
+            <p class="sample-text open-sans">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name lato">Lato - Airbnb, Slack, Typeform</div>
+            <p class="sample-text lato">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name source-sans">Source Sans 3 - Adobe products</div>
+            <p class="sample-text source-sans">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name work-sans">Work Sans - Apple Music, Medium</div>
+            <p class="sample-text work-sans">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name ibm-plex">IBM Plex Sans - IBM, Mozilla</div>
+            <p class="sample-text ibm-plex">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name dm-sans">DM Sans - Spotify, Coinbase</div>
+            <p class="sample-text dm-sans">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name nunito">Nunito - Popular in dashboards</div>
+            <p class="sample-text nunito">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name raleway">Raleway - Fashion & design sites</div>
+            <p class="sample-text raleway">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name montserrat">Montserrat - Mailchimp, Eventbrite</div>
+            <p class="sample-text montserrat">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name poppins">Poppins - Google, Indian govt sites</div>
+            <p class="sample-text poppins">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name mulish">Mulish - Modern web apps</div>
+            <p class="sample-text mulish">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name manrope">Manrope - Tech startups</div>
+            <p class="sample-text manrope">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name archivo">Archivo - Vox, The Verge</div>
+            <p class="sample-text archivo">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name outfit">Outfit - Modern brands</div>
+            <p class="sample-text outfit">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name plus-jakarta">Plus Jakarta Sans - Startups, SaaS</div>
+            <p class="sample-text plus-jakarta">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name sora">Sora - Web3, crypto sites</div>
+            <p class="sample-text sora">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name space-grotesk">Space Grotesk - Tech, creative agencies</div>
+            <p class="sample-text space-grotesk">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name oswald">Oswald - Headlines, sports sites</div>
+            <p class="sample-text oswald">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name ubuntu">Ubuntu - Linux, tech sites</div>
+            <p class="sample-text ubuntu">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+        </div>
+
+        <div id="serif" class="tab-content">
+        <div class="font-section">
+            <div class="font-name georgia">Georgia - New York Times, Medium, Guardian</div>
+            <p class="sample-text georgia">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name lora">Lora - Blogs, editorial sites</div>
+            <p class="sample-text lora">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name merriweather">Merriweather - Google Docs, blogs</div>
+            <p class="sample-text merriweather">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name playfair">Playfair Display - Fashion, luxury brands</div>
+            <p class="sample-text playfair">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name pt-serif">PT Serif - News sites, blogs</div>
+            <p class="sample-text pt-serif">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name crimson">Crimson Text - Academic, book sites - +sized for readability</div>
+            <p class="sample-text crimson">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name spectral">Spectral - Google News - +sized for readability</div>
+            <p class="sample-text spectral">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name literata">Literata - Google Play Books</div>
+            <p class="sample-text literata">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name libre-baskerville">Libre Baskerville - Publishing, editorial</div>
+            <p class="sample-text libre-baskerville">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name eb-garamond">EB Garamond - Books, academia - +sized for readability</div>
+            <p class="sample-text eb-garamond">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name cormorant">Cormorant Garamond - Luxury, fashion - +sized for readability</div>
+            <p class="sample-text cormorant">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name bitter">Bitter - Modern editorial sites</div>
+            <p class="sample-text bitter">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name cardo">Cardo - Academic publications - +sized for readability</div>
+            <p class="sample-text cardo">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name noto-serif">Noto Serif - Google, Wikipedia</div>
+            <p class="sample-text noto-serif">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name alegreya">Alegreya - Books, long-form - +sized for readability</div>
+            <p class="sample-text alegreya">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name neuton">Neuton - Editorial, magazines - +sized for readability</div>
+            <p class="sample-text neuton">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name roboto-slab">Roboto Slab - Google, slab serif variant</div>
+            <p class="sample-text roboto-slab">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+
+        <div class="font-section">
+            <div class="font-name zilla-slab">Zilla Slab - Mozilla's brand font</div>
+            <p class="sample-text zilla-slab">Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+        </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Configuration
+        const headerText = "Font Comparison for Articles";
+        
+        // Set header text on load
+        document.getElementById('mainHeader').textContent = headerText;
+
+        function switchTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+
+        function changeSize(value) {
+            // Update CSS variable
+            document.documentElement.style.setProperty('--base-size', value + 'px');
+            
+            // Update display value
+            document.getElementById('sizeValue').textContent = value + 'px';
+        }
+    </script>
+</body>
+</html>

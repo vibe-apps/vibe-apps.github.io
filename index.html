@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apps and Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Roboto:wght@300;400;500&family=Open+Sans:wght@300;400;500&family=Lato:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="pages/styles/style.css" />
+    <link rel="stylesheet" href="pages/styles/font-comparison.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="mainHeader"></h1>
+
+      <div class="tool-section">
+        <h2 class="tool-title">Font Comparison for Articles</h2>
+
+        <div class="preview-wrapper">
+          <a href="pages/font-comparison.html" class="preview-link">
+            <div class="preview-content">
+              <div class="font-section">
+                <div class="font-name roboto">
+                  Roboto - Google, YouTube, Android
+                </div>
+                <p class="sample-text roboto">
+                  Sherlock Holmes is a fictional detective created by British
+                  author Sir Arthur Conan Doyle. Referring to himself as a
+                  "consulting detective" in the stories, Holmes is known for his
+                  proficiency with observation, deduction, forensic science, and
+                  logical reasoning that borders on the fantastic, which he
+                  employs when investigating cases for a wide variety of
+                  clients, including Scotland Yard.
+                </p>
+              </div>
+
+              <div class="font-section">
+                <div class="font-name open-sans">
+                  Open Sans - WordPress, Mozilla, Shopify
+                </div>
+                <p class="sample-text open-sans">
+                  Sherlock Holmes is a fictional detective created by British
+                  author Sir Arthur Conan Doyle. Referring to himself as a
+                  "consulting detective" in the stories, Holmes is known for his
+                  proficiency with observation, deduction, forensic science, and
+                  logical reasoning that borders on the fantastic, which he
+                  employs when investigating cases for a wide variety of
+                  clients, including Scotland Yard.
+                </p>
+              </div>
+
+              <div class="font-section">
+                <div class="font-name lato">Lato - Airbnb, Slack, Typeform</div>
+                <p class="sample-text lato">
+                  Sherlock Holmes is a fictional detective created by British
+                  author Sir Arthur Conan Doyle. Referring to himself as a
+                  "consulting detective" in the stories, Holmes is known for his
+                  proficiency with observation, deduction, forensic science, and
+                  logical reasoning that borders on the fantastic, which he
+                  employs when investigating cases for a wide variety of
+                  clients, including Scotland Yard.
+                </p>
+              </div>
+            </div>
+
+            <div class="fade-overlay"></div>
+            <span class="more-button">More</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Configuration
+      const headerText = "Apps and Tools";
+
+      // Set header text on load
+      document.getElementById("mainHeader").textContent = headerText;
+    </script>
+  </body>
+</html>
