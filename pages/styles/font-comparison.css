@@ -56,6 +56,27 @@
     gap: 15px;
 }
 
+/* Symbols Toggle Button */
+.symbols-toggle {
+    padding: 12px 24px;
+    background: #0f0f0f;
+    border: 1px solid #222;
+    border-radius: 4px;
+    color: #888;
+    cursor: pointer;
+    font-size: 14px;
+    transition: border-color 0.3s, color 0.3s, background 0.3s;
+    font-family: inherit;
+    width: 155px;
+    text-align: center;
+}
+
+.symbols-toggle:hover {
+    border-color: #333;
+    color: #aaa;
+    background: #1a1a1a;
+}
+
 .size-label {
     color: #888;
     font-size: 14px;
@@ -75,7 +96,7 @@
     appearance: none;
     width: 16px;
     height: 16px;
-    background: #fff;
+    background: #aaa;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -83,14 +104,14 @@
 .size-slider::-moz-range-thumb {
     width: 16px;
     height: 16px;
-    background: #fff;
+    background: #aaa;
     border-radius: 50%;
     cursor: pointer;
     border: none;
 }
 
 .size-value {
-    color: #fff;
+    color: #aaa;
     font-size: 14px;
     min-width: 40px;
 }

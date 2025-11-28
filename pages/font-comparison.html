@@ -26,6 +26,8 @@
                 <input type="range" class="size-slider" min="12" max="24" value="16" step="1" oninput="changeSize(this.value)">
                 <span class="size-value" id="sizeValue">16px</span>
             </div>
+
+            <button class="symbols-toggle" onclick="toggleSymbols()">Show symbols</button>
         </div>
 
         <div id="sans-serif" class="tab-content active">
@@ -243,11 +245,13 @@
         const headerText = "Font Comparison for Articles";
         const sampleTextClassic = `Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his proficiency with observation, deduction, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.`;
         const sampleTextArticle = `Sherlock Holmes is a fictional detective created by British author Sir Arthur Conan Doyle. Referring to himself as a "consulting detective" in the stories, Holmes is known for his mastery of observation, deduction, and logical reasoning that borders on the fantastic, which he employs while assisting clients from society figures to Scotland Yard. Holmes first appeared in print in 1887. Biographers often note how the serialized adventures read like dispatches from the bustling newspapers of Victorian London — lively, brisk, and always chasing the next clue.`;
-        const sampleText = sampleTextClassic;
-        
+
+        let useSymbols = false;
+        let sampleText = sampleTextClassic;
+
         // Set header text and populate all sample paragraphs on load
         document.getElementById('mainHeader').textContent = headerText;
-        
+
         // Populate all sample text paragraphs
         document.querySelectorAll('.sample-text').forEach(paragraph => {
             paragraph.textContent = sampleText;
@@ -274,9 +278,27 @@
         function changeSize(value) {
             // Update CSS variable
             document.documentElement.style.setProperty('--base-size', value + 'px');
-            
+
             // Update display value
             document.getElementById('sizeValue').textContent = value + 'px';
+        }
+
+        function toggleSymbols() {
+            useSymbols = !useSymbols;
+            const button = document.querySelector('.symbols-toggle');
+
+            if (useSymbols) {
+                sampleText = sampleTextArticle;
+                button.textContent = 'Hide symbols';
+            } else {
+                sampleText = sampleTextClassic;
+                button.textContent = 'Show symbols';
+            }
+
+            // Update all sample text paragraphs
+            document.querySelectorAll('.sample-text').forEach(paragraph => {
+                paragraph.textContent = sampleText;
+            });
         }
     </script>
 </body>
