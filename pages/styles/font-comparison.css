@@ -349,3 +349,36 @@
 .zilla-slab {
     font-size: calc(var(--base-size) + 1px);
 }
+
+/* Header adjustments for better readability - same as body text */
+.font-name.alegreya {
+    font-size: calc(20px + 2px);
+}
+
+.font-name.neuton {
+    font-size: calc(20px + 3px);
+}
+
+.font-name.eb-garamond {
+    font-size: calc(20px + 3px);
+}
+
+.font-name.cormorant {
+    font-size: calc(20px + 3px);
+}
+
+.font-name.crimson {
+    font-size: calc(20px + 2px);
+}
+
+.font-name.spectral {
+    font-size: calc(20px + 1px);
+}
+
+.font-name.cardo {
+    font-size: calc(20px + 1px);
+}
+
+.font-name.zilla-slab {
+    font-size: calc(20px + 1px);
+}
